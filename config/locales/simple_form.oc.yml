@@ -3,31 +3,31 @@ oc:
   simple_form:
     hints:
       account_warning_preset:
-        text: Podètz utilizar la sintaxi dels tuts, coma las URL, las etiquetas e las mencions
+        text: "Podètz utilizar la sintaxi dels tuts, coma las URL, las etiquetas e las mencions"
       admin_account_action:
         send_email_notification: L’utilizaire recebrà una explicacion de çò qu’arribèt a son compte
-        text_html: Opcional. Podètz utilizar la sintaxi dels tuts. Podètz <a href="%{path}">ajustar un avertiment personalizat</a> per estalviar de temps
-        type_html: Causir de qué far amb <strong>%{acct}</strong>
+        text_html: "Opcional. Podètz utilizar la sintaxi dels tuts. Podètz <a href=\"%{path}\">ajustar un avertiment personalizat</a> per estalviar de temps"
+        type_html: "Causir de qué far amb <strong>%{acct}</strong>"
         warning_preset_id: Opcional. Podètz ajustar un tèxt personalizat a a fin de çò predefinit
       defaults:
         autofollow: Lo monde que se marcan gràcia a l’invitacion vos segràn automaticament
-        avatar: PNG, GIF o JPG. Maximum %{size}. Serà retalhat en %{dimensions}px
+        avatar: "PNG, GIF o JPG. Maximum %{size}. Serà retalhat en %{dimensions}px"
         bot: Avisar lo monde qu’aqueste compte es pas d’una persona
         context: Un o mai de contèxtes ont lo filtre deuriá s’aplicar
         digest: Solament enviat aprèp un long moment d’inactivitat e solament s’avètz recebut de messatges personals pendent vòstra abséncia
-        discoverable_html: L’<a href="%{path}" target="_blank">annuari</a> permet al monde de trobar de comptes segon lor interèsses e activitats. Requerís almens %{min_followers} seguidors
+        discoverable_html: "L’<a href=\"%{path}\" target=\"_blank\">annuari</a> permet al monde de trobar de comptes segon lor interèsses e activitats. Requerís almens %{min_followers} seguidors"
         email: Vos mandarem un corrièl de confirmacion
         fields: Podètz far veire cap a 4 elements sus vòstre perfil
-        header: PNG, GIF o JPG. Maximum %{size}. Serà retalhada en %{dimensions}px
+        header: "PNG, GIF o JPG. Maximum %{size}. Serà retalhada en %{dimensions}px"
         inbox_url: Copiatz l’URL de la pagina màger del relai que volètz utilizar
-        irreversible: Los tuts filtrats desapareisseràn irreversiblament, encara que lo filtre siá suprimit mai tard
-        locale: La lenga de l’interfàcia d’utilizacion, los messatges e las notificacions
+        irreversible: "Los tuts filtrats desapareisseràn irreversiblament, encara que lo filtre siá suprimit mai tard"
+        locale: "La lenga de l’interfàcia d’utilizacion, los messatges e las notificacions"
         locked: Demanda qu’acceptetz manualament lo mond que vos sègon e botarà la visibilitat de vòstras publicacions coma accessiblas a vòstres seguidors solament
         password: Utilizatz almens 8 caractèrs
         phrase: Serà pres en compte que siá en majuscula o minuscula o dins un avertiment de contengut sensible
-        scopes: A quinas APIs poiràn accedir las aplicacions. Se seleccionatz un encastre de naut nivèl, fa pas mestièr de seleccionar los nivèls mai basses.
+        scopes: "A quinas APIs poiràn accedir las aplicacions. Se seleccionatz un encastre de naut nivèl, fa pas mestièr de seleccionar los nivèls mai basses."
         setting_aggregate_reblogs: Mostrar pas los nòus partatges que son estats partejats recentament (afecta pas que los nòus partatges recebuts)
-        setting_default_language: La lenga de vòstres tuts pòt èsser detectada automaticament, mas de còps es pas corrèctament determinada
+        setting_default_language: "La lenga de vòstres tuts pòt èsser detectada automaticament, mas de còps es pas corrèctament determinada"
         setting_display_media_default: Rescondre los mèdias marcats coma sensibles
         setting_display_media_hide_all: Totjorn rescondre los mèdias
         setting_display_media_show_all: Totjorn mostrar los mèdias marcats coma sensibles
@@ -35,8 +35,8 @@ oc:
         setting_noindex: Aquò es destinat a vòstre perfil public e vòstra pagina d’estatuts
         setting_show_application: Lo nom de l’aplicacion qu’utilizatz per publicar serà mostrat dins la vista detalhada de vòstres tuts
         setting_theme: Aquò càmbia lo tèma grafic de Mastodon quand sètz connectat qual que siasque lo periferic.
-        username: Vòstre nom d’utilizaire serà unic sus %{domain}
-        whole_word: Quand lo mot-clau o frasa es solament alfranumeric, serà pas qu’aplicat se correspond al mot complèt
+        username: "Vòstre nom d’utilizaire serà unic sus %{domain}"
+        whole_word: "Quand lo mot-clau o frasa es solament alfranumeric, serà pas qu’aplicat se correspond al mot complèt"
       featured_tag:
         name: 'Benlèu que volètz utilizar una d’aquestas causas :'
       imports:
@@ -46,7 +46,7 @@ oc:
       sessions:
         otp: 'Picatz lo còdi d’autentificacion en dos temps (Two factor code) de vòstra aplicacion mobil o utilizatz un de vòstres còdis de recuperacion :'
       user:
-        chosen_languages: Quand seleccionadas, solament los tuts dins las lengas triadas seràn mostrats dins vòstre flux d’actualitat
+        chosen_languages: "Quand seleccionadas, solament los tuts dins las lengas triadas seràn mostrats dins vòstre flux d’actualitat"
     labels:
       account:
         fields:
@@ -121,7 +121,7 @@ oc:
         must_be_following: Blocar las notificacions del mond que seguètz pas
         must_be_following_dm: Blocar los messatges del monde que seguètz pas
       invite_request:
-        text: Perqué volètz vos marcar ?
+        text: "Perqué volètz vos marcar ?"
       notification_emails:
         digest: Enviar un corrièl recapitulatiu
         favourite: Enviar un corrièl quand qualqu’un plaça vòstre estatut en favorit
@@ -131,8 +131,8 @@ oc:
         pending_account: Enviar un corrièl quand cal validar un compte novèl
         reblog: Enviar un corrièl quand qualqu’un tòrna partejar vòstre estatut
         report: Enviar un corrièl pels nòus senhalaments
-    'no': Non
+    'no': 'Non'
     required:
       mark: "*"
       text: requesit
-    'yes': Òc
+    'yes': 'Òc'
