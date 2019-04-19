@@ -10,7 +10,7 @@ cs:
         account:
           attributes:
             username:
-              invalid: pouze písmena, číslice a podtržítka
+              invalid: "pouze písmena, číslice a podtržítka"
         status:
           attributes:
             reblog:
