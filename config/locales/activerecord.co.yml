@@ -10,7 +10,7 @@ co:
         account:
           attributes:
             username:
-              invalid: solu lettere, numeri è liniette basse
+              invalid: "solu lettere, numeri è liniette basse"
         status:
           attributes:
             reblog:
