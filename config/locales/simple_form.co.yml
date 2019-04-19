@@ -3,31 +3,31 @@ co:
   simple_form:
     hints:
       account_warning_preset:
-        text: Pudete utilizà a sintassa di i statuti, per esempiu l'URL, hashtag, minzione
+        text: "Pudete utilizà a sintassa di i statuti, per esempiu l'URL, hashtag, minzione"
       admin_account_action:
         send_email_notification: L'utilizatore hà da riceve una spiegazione di cio chì hè accadutu à u so contu
-        text_html: In uzzione. Pudete utilizà a sintassa di i statuti. Pudete ancu <a href="%{path}">aghjustà preselezzione d'avertimentu</a> per piglià tempu
-        type_html: Sceglie chì fà cù <strong>%{acct}</strong>
+        text_html: "In uzzione. Pudete utilizà a sintassa di i statuti. Pudete ancu <a href=\"%{path}\">aghjustà preselezzione d'avertimentu</a> per piglià tempu"
+        type_html: "Sceglie chì fà cù <strong>%{acct}</strong>"
         warning_preset_id: In uzzione. Pudete sempre aghjustà un testu persunalizatu à a fine di a preselezzione
       defaults:
         autofollow: Quelli·e chì s'arregistranu cù l'invitazione saranu autumaticamente abbunati·e à voi
-        avatar: Furmatu PNG, GIF o JPG. %{size} o menu. Sarà ridottu à %{dimensions}px
+        avatar: "Furmatu PNG, GIF o JPG. %{size} o menu. Sarà ridottu à %{dimensions}px"
         bot: Stu contu hè autumatizatu è ùn hè forse micca survegliatu
         context: Cuntestu·i induve u filtru deve esse applicatu
-        digest: Solu mandatu dopu à una longa perioda d’inattività, è solu s’elli ci sò novi missaghji diretti
-        discoverable_html: L'<a href="%{path}" target="_blank">annuariu</a> permette à a ghjente di truvà conti à partesi d'interessi è d'attività. Ci vole à avè almenu %{min_followers} abbunati
+        digest: "Solu mandatu dopu à una longa perioda d’inattività, è solu s’elli ci sò novi missaghji diretti"
+        discoverable_html: "L'<a href=\"%{path}\" target=\"_blank\">annuariu</a> permette à a ghjente di truvà conti à partesi d'interessi è d'attività. Ci vole à avè almenu %{min_followers} abbunati"
         email: Avete da riceve un'e-mail di cunfirmazione
         fields: Pudete avè fin’à 4 elementi mustrati cum’un tavulone nant’à u vostru prufile
-        header: Furmatu PNG, GIF o JPG. %{size} o menu. Sarà ridottu à %{dimensions}px
+        header: "Furmatu PNG, GIF o JPG. %{size} o menu. Sarà ridottu à %{dimensions}px"
         inbox_url: Cupiate l'URL di a pagina d'accolta di u ripetitore chì vulete utilizà
-        irreversible: I statuti filtrati saranu sguassati di manera irreversibile, ancu s'ellu hè toltu u filtru
-        locale: A lingua di l'interfaccia utilizatore, di l'e-mail è di e nutificazione push
+        irreversible: "I statuti filtrati saranu sguassati di manera irreversibile, ancu s'ellu hè toltu u filtru"
+        locale: "A lingua di l'interfaccia utilizatore, di l'e-mail è di e nutificazione push"
         locked: Duvarete appruvà e dumande d’abbunamentu
         password: Ci volenu almenu 8 caratteri
         phrase: Sarà trovu senza primura di e maiuscule o di l'avertimenti
-        scopes: L'API à quelle l'applicazione averà accessu. S'è voi selezziunate un parametru d'altu livellu, un c'hè micca bisognu di selezziunà quell'individuali.
+        scopes: "L'API à quelle l'applicazione averà accessu. S'è voi selezziunate un parametru d'altu livellu, un c'hè micca bisognu di selezziunà quell'individuali."
         setting_aggregate_reblogs: Ùn mustrà micca e nove spartere per i statuti chì sò stati spartuti da pocu (tocca solu e spartere più ricente)
-        setting_default_language: A lingua di i vostri statuti pò esse induvinata autumaticamente, mà ùn marchja micca sempre bè
+        setting_default_language: "A lingua di i vostri statuti pò esse induvinata autumaticamente, mà ùn marchja micca sempre bè"
         setting_display_media_default: Piattà i media marcati cum'è sensibili
         setting_display_media_hide_all: Sempre piattà tutti i media
         setting_display_media_show_all: Sempre affissà i media marcati cum'è sensibili
@@ -35,8 +35,8 @@ co:
         setting_noindex: Tocca à u vostru prufile pubblicu è i vostri statuti
         setting_show_application: L'applicazione chì voi utilizate per mandà statuti sarà affissata indè a vista ditagliata di quelli
         setting_theme: Tocca à l’apparenza di Mastodon quandu site cunnettatu·a da qualch’apparechju.
-        username: U vostru cugnome sarà unicu nant'à %{domain}
-        whole_word: Quandu a parolla o a frasa sana hè alfanumerica, sarà applicata solu s'ella currisponde à a parolla sana
+        username: "U vostru cugnome sarà unicu nant'à %{domain}"
+        whole_word: "Quandu a parolla o a frasa sana hè alfanumerica, sarà applicata solu s'ella currisponde à a parolla sana"
       featured_tag:
         name: 'Pudete vulè utilizà unu di quelli:'
       imports:
@@ -121,7 +121,7 @@ co:
         must_be_following: Piattà e nutificazione di quelli·e ch’ùn seguitate
         must_be_following_dm: Bluccà e missaghji diretti di quelli·e ch’ùn seguitate
       invite_request:
-        text: Perchè vulete ghjunghje?
+        text: "Perchè vulete ghjunghje?"
       notification_emails:
         digest: Mandà e-mail di ricapitulazione
         favourite: Mandà un’e-mail quandu qualch’unu aghjunghje i mo statuti à i so favuriti
@@ -131,8 +131,8 @@ co:
         pending_account: Mandà un'e-mail quandu un novu contu hà bisognu d'esse valutatu
         reblog: Mandà un’e-mail quandu qualch’unu sparte i mo statuti
         report: Mandà un'e-mail quandu c'hè un novu signalamentu
-    'no': Nò
+    'no': 'Nò'
     required:
       mark: "*"
       text: riquisiti
-    'yes': Ié
+    'yes': 'Ié'
