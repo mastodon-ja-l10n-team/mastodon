@@ -31,7 +31,7 @@ ja:
       form:
         error: フォームにエラーが無いか確認してください
       help:
-        native_redirect_uri: ローカルテストに %{native_redirect_uri} を使用
+        native_redirect_uri: "ローカルテストに %{native_redirect_uri} を使用"
         redirect_uri: 一行に一つのURLを入力してください
         scopes: アクセス権は半角スペースで区切ることができます。 空白のままにするとデフォルトを使用します。
       index:
@@ -60,7 +60,7 @@ ja:
         title: エラーが発生しました
       new:
         able_to: このアプリは以下のことができます
-        prompt: アプリ %{client_name} があなたのアカウントへのアクセスを要求しています
+        prompt: "アプリ %{client_name} があなたのアカウントへのアクセスを要求しています"
         title: 認証が必要です
       show:
         title: 認証コードをコピーしてアプリに貼り付けて下さい。
