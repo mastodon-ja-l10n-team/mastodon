@@ -10,7 +10,7 @@ kk:
         account:
           attributes:
             username:
-              invalid: тек әріптер, сандар және асты сызылған таңбалар
+              invalid: "тек әріптер, сандар және асты сызылған таңбалар"
         status:
           attributes:
             reblog:
