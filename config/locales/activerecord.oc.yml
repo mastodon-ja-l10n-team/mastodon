@@ -10,7 +10,7 @@ oc:
         account:
           attributes:
             username:
-              invalid: solament letras, nombres e tirets basses
+              invalid: "solament letras, nombres e tirets basses"
         status:
           attributes:
             reblog:
