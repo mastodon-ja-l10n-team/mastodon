@@ -25,13 +25,13 @@ it:
         edit: Modifica
         submit: Invia
       confirmations:
-        destroy: Sei sicuro?
+        destroy: "Sei sicuro?"
       edit:
         title: Modifica applicazione
       form:
         error: Ooops! Controlla nel modulo la presenza di errori
       help:
-        native_redirect_uri: Usa %{native_redirect_uri} per test locali
+        native_redirect_uri: "Usa %{native_redirect_uri} per test locali"
         redirect_uri: Usa una riga per URI
         scopes: Dividi gli scopes con spazi. Lascia vuoto per utilizzare gli scopes di default.
       index:
@@ -60,7 +60,7 @@ it:
         title: Si è verificato un errore
       new:
         able_to: Non sarà in grado di
-        prompt: L'applicazione %{client_name} richiede l'accesso al tuo account
+        prompt: "L'applicazione %{client_name} richiede l'accesso al tuo account"
         title: Autorizzazione richiesta
       show:
         title: Copia questo codice di autorizzazione e incollalo nell'applicazione.
@@ -68,7 +68,7 @@ it:
       buttons:
         revoke: Disabilita
       confirmations:
-        revoke: Sei sicuro?
+        revoke: "Sei sicuro?"
       index:
         application: Applicazione
         created_at: Autorizzato
@@ -79,12 +79,12 @@ it:
       messages:
         access_denied: Il proprietario del servizio o il server di autorizzazione hanno rifiutato la richiesta.
         credential_flow_not_configured: Il processo Resource Owner Password Credentials è fallito perché Doorkeeper.configure.resource_owner_from_credentials non è stato configurato.
-        invalid_client: Accesso al servizio fallito perché il servizio è sconosciuto, l'accesso al servizio non è stato incluso, o il metodo di accesso non è supportato.
-        invalid_grant: Il permesso d'autorizzazione è non valido, scaduto, disabilitato, non coincide con l'URI di reindirizzamento fornito nella richiesta di autorizzazione, o è stato rilasciato da un altro client.
+        invalid_client: "Accesso al servizio fallito perché il servizio è sconosciuto, l'accesso al servizio non è stato incluso, o il metodo di accesso non è supportato."
+        invalid_grant: "Il permesso d'autorizzazione è non valido, scaduto, disabilitato, non coincide con l'URI di reindirizzamento fornito nella richiesta di autorizzazione, o è stato rilasciato da un altro client."
         invalid_redirect_uri: L'URI di reindirizzamento fornito non è valido.
-        invalid_request: La richiesta non contiene un parametro necessario, contiene un valore parametrico non supportato, o è altrimenti malformulata.
-        invalid_resource_owner: Le credenziali di accesso fornite per il proprietario non sono corrette, o il proprietario del servizio non è stato trovato
-        invalid_scope: Lo scope richiesto è invalido, sconosciuto, o malformulato.
+        invalid_request: "La richiesta non contiene un parametro necessario, contiene un valore parametrico non supportato, o è altrimenti malformulata."
+        invalid_resource_owner: "Le credenziali di accesso fornite per il proprietario non sono corrette, o il proprietario del servizio non è stato trovato"
+        invalid_scope: "Lo scope richiesto è invalido, sconosciuto, o malformulato."
         invalid_token:
           expired: Il token di accesso è scaduto
           revoked: Il token di accesso è stato disabilitato
