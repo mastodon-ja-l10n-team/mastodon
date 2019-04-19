@@ -5,14 +5,12 @@ gl:
       poll:
         expires_at: Caducidade
         options: Opcións
-      status:
-        owned_poll: Sondaxe
     errors:
       models:
         account:
           attributes:
             username:
-              invalid: só letras, números e liñas baixas
+              invalid: "só letras, números e liñas baixas"
         status:
           attributes:
             reblog:
