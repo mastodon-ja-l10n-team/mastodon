@@ -25,13 +25,13 @@ eu:
         edit: Editatu
         submit: Bidali
       confirmations:
-        destroy: Ziur zaude?
+        destroy: "Ziur zaude?"
       edit:
         title: Editatu aplikazioa
       form:
         error: Ene! Egiaztatu formularioan errorerik dagoen
       help:
-        native_redirect_uri: Erabili %{native_redirect_uri} proba lokaletarako
+        native_redirect_uri: "Erabili %{native_redirect_uri} proba lokaletarako"
         redirect_uri: Erabili lerro bat URI bakoitzeko
         scopes: Banandu esparruak espazioekin. Laga hutsik lehenetsitako esparruak erabiltzeko.
       index:
@@ -68,7 +68,7 @@ eu:
       buttons:
         revoke: Indargabetu
       confirmations:
-        revoke: Ziur zaude?
+        revoke: "Ziur zaude?"
       index:
         application: Aplikazioa
         created_at: Baimenduta
@@ -79,12 +79,12 @@ eu:
       messages:
         access_denied: Baliabidearen jabeak edo baimenaren zerbitzariak eskaria ukatu du.
         credential_flow_not_configured: Baliabidearen jabearen pasahitza kredentzialen fluxuak huts egin du Doorkeeper.configure.resource_owner_from_credentials konfiguratu gabe dagoelako.
-        invalid_client: Bezeroaren autentifikazioak huts egin du bezero ezezaguna delako, ez delako bezero autentifikazioa txertatu, edo autentifikazio metodoa ez delako onartzen.
-        invalid_grant: Emandako autorizatzea baliogabea da, iraungitu da, indargabetu da. ez dator bat autorizatze eskarian erabilitako URI-arekin, edo beste bezero batek sortu du.
+        invalid_client: "Bezeroaren autentifikazioak huts egin du bezero ezezaguna delako, ez delako bezero autentifikazioa txertatu, edo autentifikazio metodoa ez delako onartzen."
+        invalid_grant: "Emandako autorizatzea baliogabea da, iraungitu da, indargabetu da. ez dator bat autorizatze eskarian erabilitako URI-arekin, edo beste bezero batek sortu du."
         invalid_redirect_uri: Sartutako birbideratze URI-a baliogabea da.
-        invalid_request: Eskaerak beharrezkoa den parametro bat falta du, onartu gabeko parametro-balio bat du, edo beste moduren batean gaizki osatua dago.
-        invalid_resource_owner: Emandako baliabidearen jabearen kredentzialak baliogabeak dira, edo baliabidearen jabea ez da aurkitu
-        invalid_scope: Eskatutako esparrua baliogabea da, ezezaguna, edo gaizki osatua dago.
+        invalid_request: "Eskaerak beharrezkoa den parametro bat falta du, onartu gabeko parametro-balio bat du, edo beste moduren batean gaizki osatua dago."
+        invalid_resource_owner: "Emandako baliabidearen jabearen kredentzialak baliogabeak dira, edo baliabidearen jabea ez da aurkitu"
+        invalid_scope: "Eskatutako esparrua baliogabea da, ezezaguna, edo gaizki osatua dago."
         invalid_token:
           expired: Sarbide token-a iraungitu da
           revoked: Sarbide token-a indargabetua izan da
