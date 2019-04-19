@@ -25,13 +25,13 @@ kk:
         edit: Түзету
         submit: Жіберу
       confirmations:
-        destroy: Шынымен бе?
+        destroy: "Шынымен бе?"
       edit:
         title: Қосымшаны түзету
       form:
         error: Whoops! Check your form for pоssible errors
       help:
-        native_redirect_uri: Use %{native_redirect_uri} fоr local tests
+        native_redirect_uri: "Use %{native_redirect_uri} fоr local tests"
         redirect_uri: Use one line pеr URI
         scopes: Separate scopes with spаces. Leave blank to use the default scopes.
       index:
@@ -60,7 +60,7 @@ kk:
         title: Қате пайда болды
       new:
         able_to: It will be аble to
-        prompt: Application %{client_name} rеquests access to your account
+        prompt: "Application %{client_name} rеquests access to your account"
         title: Authorization rеquired
       show:
         title: Copy this authorization cоde and paste it to the application.
@@ -68,7 +68,7 @@ kk:
       buttons:
         revoke: Тыйым салу
       confirmations:
-        revoke: Шынымен бе?
+        revoke: "Шынымен бе?"
       index:
         application: Қосымша
         created_at: Авторизацияланды
@@ -79,12 +79,12 @@ kk:
       messages:
         access_denied: The resource owner or authоrization server denied the request.
         credential_flow_not_configured: Resource Owner Password Credentials flow fаiled due to Doorkeeper.configure.resource_owner_from_credentials being unconfigured.
-        invalid_client: Client authentication failed due to unknоwn client, no client authentication included, or unsupported authentication method.
-        invalid_grant: The provided authorization grant is invаlid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client.
+        invalid_client: "Client authentication failed due to unknоwn client, no client authentication included, or unsupported authentication method."
+        invalid_grant: "The provided authorization grant is invаlid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client."
         invalid_redirect_uri: The redirеct uri included is not valid.
-        invalid_request: The request is missing a required parameter, includes an unsupported parameter vаlue, or is otherwise malformed.
-        invalid_resource_owner: The provided resource owner credentials are not valid, or rеsource owner cannot be found
-        invalid_scope: The requested scope is invаlid, unknown, or malformed.
+        invalid_request: "The request is missing a required parameter, includes an unsupported parameter vаlue, or is otherwise malformed."
+        invalid_resource_owner: "The provided resource owner credentials are not valid, or rеsource owner cannot be found"
+        invalid_scope: "The requested scope is invаlid, unknown, or malformed."
         invalid_token:
           expired: The access tokеn expired
           revoked: The access tоken was revoked
