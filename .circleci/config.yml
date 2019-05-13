@@ -102,20 +102,6 @@ jobs:
     <<: *defaults
     <<: *install_ruby_dependencies
 
-  install-ruby2.5:
-    <<: *defaults
-    docker:
-      - image: circleci/ruby:2.5.3-stretch-node
-        environment: *ruby_environment
-    <<: *install_ruby_dependencies
-
-  install-ruby2.4:
-    <<: *defaults
-    docker:
-      - image: circleci/ruby:2.4.5-stretch-node
-        environment: *ruby_environment
-    <<: *install_ruby_dependencies
-
   build:
     <<: *defaults
     steps:
@@ -139,27 +125,6 @@ jobs:
       - image: circleci/redis:5.0.3-alpine3.8
     <<: *test_steps
 
-  test-ruby2.5:
-    <<: *defaults
-    docker:
-      - image: circleci/ruby:2.5.3-stretch-node
-        environment: *ruby_environment
-      - image: circleci/postgres:10.6-alpine
-        environment:
-          POSTGRES_USER: root
-      - image: circleci/redis:4.0.12-alpine
-    <<: *test_steps
-
-  test-ruby2.4:
-    <<: *defaults
-    docker:
-      - image: circleci/ruby:2.4.5-stretch-node
-        environment: *ruby_environment
-      - image: circleci/postgres:10.6-alpine
-        environment:
-          POSTGRES_USER: root
-      - image: circleci/redis:4.0.12-alpine
-    <<: *test_steps
 
   test-webui:
     <<: *defaults
@@ -183,35 +148,37 @@ workflows:
   build-and-test:
     jobs:
       - install
+          filters:
+            branches:
+              only: /^translations_.*/
       - install-ruby2.6:
+          filters:
+            branches:
+              only: /^translations_.*/
           requires:
             - install
-      - install-ruby2.5:
-          requires:
-            - install
-            - install-ruby2.6
-      - install-ruby2.4:
-          requires:
-            - install
-            - install-ruby2.6
       - build:
+          filters:
+            branches:
+              only: /^translations_.*/
           requires:
             - install-ruby2.6
       - test-ruby2.6:
+          filters:
+            branches:
+              only: /^translations_.*/
           requires:
             - install-ruby2.6
             - build
-      - test-ruby2.5:
-          requires:
-            - install-ruby2.5
-            - build
-      - test-ruby2.4:
-          requires:
-            - install-ruby2.4
-            - build
       - test-webui:
+          filters:
+            branches:
+              only: /^translations_.*/
           requires:
             - install
       - check-i18n:
+          filters:
+            branches:
+              only: /^translations_.*/
           requires:
             - install-ruby2.6
