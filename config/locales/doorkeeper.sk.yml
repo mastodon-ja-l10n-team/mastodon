@@ -25,13 +25,13 @@ sk:
         edit: Upraviť
         submit: Poslať
       confirmations:
-        destroy: Si si istý/á?
+        destroy: "Si si istý/á?"
       edit:
         title: Upraviť aplikáciu
       form:
         error: No teda! Pozrite formulár pre prípadné chyby
       help:
-        native_redirect_uri: Použite %{native_redirect_uri} pre lokálne testy
+        native_redirect_uri: "Použite %{native_redirect_uri} pre lokálne testy"
         redirect_uri: Iba jedna URI na riadok
         scopes: Oprávnenia oddeľujte medzerami. Nechajte prázdne pre štandardné oprávnenia.
       index:
@@ -60,7 +60,7 @@ sk:
         title: Nastala chyba
       new:
         able_to: Bude môcť
-        prompt: Aplikácia %{client_name} žiada prístup k vašemu účtu
+        prompt: "Aplikácia %{client_name} žiada prístup k vašemu účtu"
         title: Je potrebná autorizácia
       show:
         title: Skopíruj tento autorizačný kód a vlož ho do aplikácie.
@@ -68,7 +68,7 @@ sk:
       buttons:
         revoke: Zrušiť oprávnenie
       confirmations:
-        revoke: Si si istý?
+        revoke: "Si si istý?"
       index:
         application: Aplikácia
         created_at: Autorizované
@@ -79,19 +79,19 @@ sk:
       messages:
         access_denied: Prístup zamietnutý.
         credential_flow_not_configured: Resource Owner Password Credentials zlyhal lebo Doorkeeper.configure.resource_owner_from_credentials nebol nakonfigurovaný.
-        invalid_client: Overenie klienta zlyhalo. Neznámy klient, chýbajú údaje o klientovi alebo nepodporovaná metóda overovania.
-        invalid_grant: Poslané oprávnenie je neplatné, expirované, zrušené, nesúhlasí s presmerovacou URI použitou v autorizačnej požiadavke alebo bolo vydané niekomu inému.
+        invalid_client: "Overenie klienta zlyhalo. Neznámy klient, chýbajú údaje o klientovi alebo nepodporovaná metóda overovania."
+        invalid_grant: "Poslané oprávnenie je neplatné, expirované, zrušené, nesúhlasí s presmerovacou URI použitou v autorizačnej požiadavke alebo bolo vydané niekomu inému."
         invalid_redirect_uri: Presmerovacia URI je neplatná.
         invalid_request: Požiadavke chýba povinný parameter alebo obsahuje nepodporovanú hodnotu niektorého parametra alebo je nejako inak poškodená.
         invalid_resource_owner: Uvedené prihlasovacie údaje sú neplatné alebo nenájdené
-        invalid_scope: Požadovaný rozsah je neplatný, neznámy alebo poškodený.
+        invalid_scope: "Požadovaný rozsah je neplatný, neznámy alebo poškodený."
         invalid_token:
           expired: Prístupový token expiroval
           revoked: Prístupový token bol odňatý
           unknown: Prístupový token je neplatný
         resource_owner_authenticator_not_configured: Resource Owner zlyhal pretože Doorkeeper.configure.resource_owner_authenticator nebol nakonfigurovaný.
         server_error: Nastala neočakávaná chyba na autorizačnom serveri ktorá zabránila vykonať požiadavku.
-        temporarily_unavailable: Autorizačný server ťa teraz nemôže obslúžiť, pretože prebieha údržba alebo je dočasne preťažený.
+        temporarily_unavailable: "Autorizačný server ťa teraz nemôže obslúžiť, pretože prebieha údržba alebo je dočasne preťažený."
         unauthorized_client: Klient nie je autorizovaný vykonať danú požiadavku takouto metódou.
         unsupported_grant_type: Tento typ oprávnenia nie je podporovaný autorizačným serverom.
         unsupported_response_type: Autorizačný server nepodporuje typ tejto odpovede.
@@ -136,7 +136,7 @@ sk:
       write:follows: následuj ľudí
       write:lists: vytvor listy
       write:media: nahraj mediálne súbory
-      write:mutes: stíš diskusie, aj zapojených užívateľov
+      write:mutes: "stíš diskusie, aj zapojených užívateľov"
       write:notifications: vyčisti oboznámenia
       write:reports: nahlás iných užívateľov
       write:statuses: publikuj príspevky
