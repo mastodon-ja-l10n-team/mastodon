@@ -25,13 +25,13 @@ nl:
         edit: Bewerken
         submit: Opslaan
       confirmations:
-        destroy: Weet je het zeker?
+        destroy: "Weet je het zeker?"
       edit:
         title: Toepassing bewerken
       form:
         error: Oops! Controleer het formulier op fouten
       help:
-        native_redirect_uri: Gebruik %{native_redirect_uri} voor lokale tests
+        native_redirect_uri: "Gebruik %{native_redirect_uri} voor lokale tests"
         redirect_uri: Gebruik één regel per URI
         scopes: Toestemmingen met spaties van elkaar scheiden. Laat leeg om de standaardtoestemmingen te gebruiken.
       index:
@@ -68,7 +68,7 @@ nl:
       buttons:
         revoke: Intrekken
       confirmations:
-        revoke: Weet je het zeker?
+        revoke: "Weet je het zeker?"
       index:
         application: Toepassing
         created_at: Aangemaakt op
@@ -79,12 +79,12 @@ nl:
       messages:
         access_denied: De resource-eigenaar of autorisatie-server weigerde het verzoek.
         credential_flow_not_configured: De wachtwoordgegevens-flow van de resource-eigenaar is mislukt omdat Doorkeeper.configure.resource_owner_from_credentials niet is ingesteld.
-        invalid_client: Clientverificatie is mislukt door een onbekende client, ontbrekende client-authenticatie of een niet ondersteunde authenticatie-methode.
-        invalid_grant: De verstrekte autorisatie is ongeldig, verlopen, ingetrokken, komt niet overeen met de redirect-URI die is opgegeven of werd uitgegeven aan een andere client.
+        invalid_client: "Clientverificatie is mislukt door een onbekende client, ontbrekende client-authenticatie of een niet ondersteunde authenticatie-methode."
+        invalid_grant: "De verstrekte autorisatie is ongeldig, verlopen, ingetrokken, komt niet overeen met de redirect-URI die is opgegeven of werd uitgegeven aan een andere client."
         invalid_redirect_uri: De opgegeven redirect-URI is ongeldig.
-        invalid_request: Het verzoek mist een vereiste parameter, bevat een niet ondersteunde parameterwaarde of is anderszins onjuist.
+        invalid_request: "Het verzoek mist een vereiste parameter, bevat een niet ondersteunde parameterwaarde of is anderszins onjuist."
         invalid_resource_owner: De verstrekte resource-eigenaargegevens zijn ongeldig of de resource-eigenaar kan niet worden gevonden
-        invalid_scope: De opgevraagde toestemming is ongeldig, onbekend of onjuist.
+        invalid_scope: "De opgevraagde toestemming is ongeldig, onbekend of onjuist."
         invalid_token:
           expired: Toegangscode verlopen
           revoked: Toegangscode ingetrokken
@@ -110,7 +110,6 @@ nl:
       admin:
         nav:
           applications: Toepassingen
-          home: Home
           oauth2_provider: OAuth2-provider
       application:
         title: OAuth-autorisatie vereist
