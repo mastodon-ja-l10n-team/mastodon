@@ -10,7 +10,7 @@ ru:
         account:
           attributes:
             username:
-              invalid: только буквы, цифры и символ подчёркивания
+              invalid: "только буквы, цифры и символ подчёркивания"
         status:
           attributes:
             reblog:
