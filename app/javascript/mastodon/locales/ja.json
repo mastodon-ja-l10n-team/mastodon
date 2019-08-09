@@ -4,6 +4,7 @@
   "account.block": "@{name}さんをブロック",
   "account.block_domain": "{domain}全体を非表示",
   "account.blocked": "ブロック済み",
+  "account.cancel_follow_request": "フォローリクエストを取り消す",
   "account.direct": "@{name}さんにダイレクトメッセージ",
   "account.domain_blocked": "ドメイン非表示中",
   "account.edit_profile": "プロフィール編集",
