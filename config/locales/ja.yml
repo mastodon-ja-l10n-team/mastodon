@@ -25,8 +25,8 @@ ja:
     get_apps: モバイルアプリを試す
     hosted_on: "Mastodon hosted on %{domain}"
     instance_actor_flash: |
-      これはサーバー自体を表す仮想のアカウントです。
-      連合目的で使用されるため、サーバー全体をドメインブロックをする場合を除きブロックしないでください。
+      このアカウントはサーバーそのものを示す仮想的なもので、個人のアカウントではありません。
+      これはサーバーの連合のために使用されます。サーバー全体をブロックする以外の目的でブロックしないでください。サーバー全体をブロックする場合、ドメインブロックを使用してください。
     learn_more: もっと詳しく
     privacy_policy: プライバシーポリシー
     see_whats_happening: やりとりを見てみる
@@ -58,6 +58,7 @@ ja:
     media: メディア
     moved_html: "%{name} さんは引っ越しました %{new_profile_link}:"
     network_hidden: この情報は利用できません
+    never_active: 活動なし
     nothing_here: 何もありません！
     people_followed_by: "%{name} さんがフォロー中のアカウント"
     people_who_follow: "%{name} さんをフォロー中のアカウント"
