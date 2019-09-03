@@ -16,7 +16,7 @@ ja:
         bot: このアカウントは主に自動で動作し、人が見ていない可能性があります
         context: フィルターを適用する対象 (複数選択可)
         digest: 長期間使用していない場合と不在時に返信を受けた場合のみ送信されます
-        discoverable: ディレクトリはあなたのアカウントをより多くの人に見つけてもらうためのひとつの手段です。
+        discoverable: ディレクトリはあなたのアカウントをより多くの人に見つけてもらうためのひとつの手段です
         email: 確認のメールが送信されます
         fields: プロフィールに表として4つまでの項目を表示することができます
         header: "%{size}までのPNG、GIF、JPGが利用可能です。 %{dimensions}pxまで縮小されます"
@@ -119,7 +119,7 @@ ja:
         setting_trends: 本日のトレンドタグを表示する
         setting_unfollow_modal: フォローを解除する前に確認ダイアログを表示する
         setting_use_blurhash: 非表示のメディアを色付きのぼかしで表示する
-        setting_use_pending_items: 手動更新に切り替える
+        setting_use_pending_items: 手動更新モード
         severity: 重大性
         type: インポートする項目
         username: ユーザー名
@@ -131,6 +131,8 @@ ja:
         must_be_follower: フォロワー以外からの通知をブロック
         must_be_following: フォローしていないユーザーからの通知をブロック
         must_be_following_dm: フォローしていないユーザーからのダイレクトメッセージをブロック
+      invite:
+        comment: コメント
       invite_request:
         text: 意気込みをお聞かせください
       notification_emails:
