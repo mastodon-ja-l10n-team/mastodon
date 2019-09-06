@@ -58,7 +58,7 @@ module Admin
       scope = scope.unreviewed if filter_params[:review] == 'unreviewed'
       scope = scope.reviewed.order(reviewed_at: :desc) if filter_params[:review] == 'reviewed'
       scope = scope.pending_review.order(requested_review_at: :desc) if filter_params[:review] == 'pending_review'
-      scope = scope.search(filter_params[:name]) if filter_params[:name]
+      scope = scope.find_normalized(filter_params[:name]) unless filter_params[:name].nil?
       scope.order(max_score: :desc)
     end
 
