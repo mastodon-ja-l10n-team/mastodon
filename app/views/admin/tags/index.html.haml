@@ -16,6 +16,20 @@
       %li= filter_link_to t('admin.tags.reviewed'), review: 'reviewed'
       %li= filter_link_to safe_join([t('admin.accounts.moderation.pending'), "(#{Tag.pending_review.count})"], ' '), review: 'pending_review'
 
+= form_tag admin_tags_url, method: 'GET', class: 'simple_form' do
+  .fields-group
+    - Admin::FilterHelper::TAGS_FILTERS.each do |key|
+      - if params[key].present?
+        = hidden_field_tag key, params[key]
+
+    - %i(name).each do |key|
+      .input.string.optional
+        = text_field_tag key, params[key], class: 'string optional', placeholder: I18n.t("admin.tags.#{key}")
+
+    .actions
+      %button= t('admin.accounts.search')
+      = link_to t('admin.accounts.reset'), admin_tags_path, class: 'button negative'
+
 %hr.spacer/
 
 = render @tags

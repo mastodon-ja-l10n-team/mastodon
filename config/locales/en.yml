@@ -515,6 +515,7 @@ en:
       context: Context
       directory: In directory
       in_directory: "%{count} in directory"
+      name: Hashtag
       review: Review status
       reviewed: Reviewed
       title: Hashtags

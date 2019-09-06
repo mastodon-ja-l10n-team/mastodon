@@ -2,13 +2,14 @@
 
 module Admin
   class TagsController < BaseController
-    before_action :set_tags, only: :index
+    before_action :set_filter_params, only: :index
     before_action :set_tag, except: :index
     before_action :set_usage_by_domain, except: :index
     before_action :set_counters, except: :index
 
     def index
       authorize :tag, :index?
+      @tags = filtered_tags.page(params[:page])
     end
 
     def show
@@ -27,8 +28,8 @@ module Admin
 
     private
 
-    def set_tags
-      @tags = filtered_tags.page(params[:page])
+    def set_filter_params
+      @filter_params = filter_params.to_hash.symbolize_keys
     end
 
     def set_tag
@@ -57,11 +58,12 @@ module Admin
       scope = scope.unreviewed if filter_params[:review] == 'unreviewed'
       scope = scope.reviewed.order(reviewed_at: :desc) if filter_params[:review] == 'reviewed'
       scope = scope.pending_review.order(requested_review_at: :desc) if filter_params[:review] == 'pending_review'
+      scope = scope.search(filter_params[:name]) if filter_params[:name]
       scope.order(max_score: :desc)
     end
 
     def filter_params
-      params.slice(:context, :review).permit(:context, :review)
+      params.slice(:context, :name, :review).permit(:context, :name, :review)
     end
 
     def tag_params
