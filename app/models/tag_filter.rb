@@ -11,6 +11,8 @@ class TagFilter
     scope = Tag.order(id: :desc)
 
     params.each do |key, value|
+      next if key.to_s == 'page'
+
       scope.merge!(scope_for(key, value)) if value.present?
     end
 

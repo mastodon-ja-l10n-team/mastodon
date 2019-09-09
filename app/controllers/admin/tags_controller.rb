@@ -2,7 +2,6 @@
 
 module Admin
   class TagsController < BaseController
-    before_action :set_tags, only: :index
     before_action :set_tag, except: [:index, :batch, :approve_all, :reject_all]
     before_action :set_usage_by_domain, except: [:index, :batch, :approve_all, :reject_all]
     before_action :set_counters, except: [:index, :batch, :approve_all, :reject_all]
@@ -10,6 +9,7 @@ module Admin
     def index
       authorize :tag, :index?
 
+      @tags = filtered_tags.page(params[:page])
       @form = Form::TagBatch.new
     end
 
@@ -47,11 +47,6 @@ module Admin
     end
 
     private
-
-    def set_tags
-      @filter_params = filter_params.to_hash.symbolize_keys
-      @tags = filtered_tags.page(params[:page]) 
-    end
 
     def set_tag
       @tag = Tag.find(params[:id])
