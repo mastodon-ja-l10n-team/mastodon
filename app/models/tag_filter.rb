@@ -8,7 +8,7 @@ class TagFilter
   end
 
   def results
-    scope = Tag.order(max_score: :desc)
+    scope = Tag.order(id: :desc)
 
     params.each do |key, value|
       scope.merge!(scope_for(key, value)) if value.present?
@@ -23,6 +23,10 @@ class TagFilter
     case key.to_s
     when 'context'
       Tag.discoverable if value == 'directory'
+    when 'name'
+      Tag.search_for(value)
+    when 'order'
+      Tag.order(max_score: :desc) if value == 'popular'
     when 'review'
       case value.to_s
       when 'reviewed'
@@ -34,8 +38,6 @@ class TagFilter
       else
         raise "Unknown filter: #{key}#{value}"
       end
-    when 'name'
-      Tag.search_for(value)
     else
       raise "Unknown filter: #{key}"
     end

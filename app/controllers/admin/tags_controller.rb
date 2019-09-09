@@ -57,7 +57,7 @@ module Admin
     end
 
     def filter_params
-      params.slice(:context, :name, :review).permit(:context, :name, :review)
+      params.slice(:context, :name, :order, :review).permit(:context, :name, :order, :review)
     end
 
     def tag_params

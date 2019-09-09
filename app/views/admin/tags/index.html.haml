@@ -16,6 +16,12 @@
       %li= filter_link_to t('admin.tags.reviewed'), review: 'reviewed'
       %li= filter_link_to safe_join([t('admin.accounts.moderation.pending'), "(#{Tag.pending_review.count})"], ' '), review: 'pending_review'
 
+  .filter-subset
+    %strong= t('generic.order_by')
+    %ul
+      %li= filter_link_to t('admin.tags.most_recent'), order: nil
+      %li= filter_link_to t('admin.tags.most_popular'), order: 'popular'
+
 = form_tag admin_tags_url, method: 'GET', class: 'simple_form' do
   .fields-group
     - Admin::FilterHelper::TAGS_FILTERS.each do |key|
