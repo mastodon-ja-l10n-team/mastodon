@@ -24,7 +24,7 @@ class TagFilter
     when 'context'
       Tag.discoverable if value == 'directory'
     when 'name'
-      Tag.search_for(value)
+      Tag.matches_name(value)
     when 'order'
       Tag.order(max_score: :desc) if value == 'popular'
     when 'review'
