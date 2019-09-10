@@ -144,4 +144,15 @@ RSpec.describe Tag, type: :model do
       expect(results).to eq [tag, similar_tag]
     end
   end
+
+  describe 'scopes' do
+    describe 'matches_name' do
+      it 'matches name which starts with the given string' do
+        match = Fabricate(:tag, name: 'pattern_and_suffix')
+        Fabricate(:tag, name: 'prefix_and_pattern')
+
+        expect(Tag.matches_name('pattern')).to eq [match]
+      end
+    end
+  end
 end
