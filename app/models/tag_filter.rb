@@ -13,7 +13,7 @@ class TagFilter
     params.each do |key, value|
       next if key.to_s == 'page'
 
-      scope.merge!(scope_for(key, value)) if value.present?
+      scope.merge!(scope_for(key, value.to_s.strip)) if value.present?
     end
 
     scope
