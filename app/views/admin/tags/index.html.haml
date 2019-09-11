@@ -24,6 +24,7 @@
     %ul
       %li= filter_link_to t('admin.tags.most_recent'), order: nil
       %li= filter_link_to t('admin.tags.most_popular'), order: 'popular'
+      %li= filter_link_to t('admin.tags.last_active'), order: 'active'
 
 = form_tag admin_tags_url, method: 'GET', class: 'simple_form' do
   .fields-group

@@ -69,7 +69,16 @@ module Admin
     end
 
     def filtered_tags
-      TagFilter.new(filter_params).results
+      scope = Tag.order(id: :desc)
+      scope = scope.matches_name(filter_params[:name].to_s.strip) unless filter_params[:name].nil?
+      scope = scope.discoverable if filter_params[:context] == 'directory'
+      scope = scope.unreviewed if filter_params[:review] == 'unreviewed'
+      scope = scope.reviewed.order(reviewed_at: :desc) if filter_params[:review] == 'reviewed'
+      scope = scope.pending_review.order(requested_review_at: :desc) if filter_params[:review] == 'pending_review'
+      scope = scope.reorder(max_score: :desc) if filter_params[:order] == 'popular'
+      scope = scope.reorder(last_status_at: :desc) if filter_params[:order] == 'active'
+
+      scope
     end
 
     def filter_params

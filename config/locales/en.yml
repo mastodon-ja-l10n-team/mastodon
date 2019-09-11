@@ -518,6 +518,7 @@ en:
       context: Context
       directory: In directory
       in_directory: "%{count} in directory"
+      last_active: Last active
       most_popular: Most popular
       most_recent: Most recent
       name: Hashtag
